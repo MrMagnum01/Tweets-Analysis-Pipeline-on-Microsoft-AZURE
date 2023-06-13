@@ -42,5 +42,3 @@ Contributions are always welcome! Please read the contributing guidelines (CONTR
 This project is licensed under the [ELFI](LICENSE).
 
 ---
-
-This README provides a thorough introduction to your project and should serve as a good starting point for users. Make sure to replace the placeholders like '[MIT license](LICENSE)' with the actual links to your license and contributing guidelines. If you have any changes or additions you'd like to make, feel free to customize it according to your needs.
