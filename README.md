@@ -12,29 +12,45 @@ This project aims to leverage the power of social media, particularly Twitter, t
 - Employs Azure Databricks for powerful data processing and analysis.
 - Leverages Power BI for intuitive data visualization.
 
-### Prerequisites
 
-- A Twitter Developer account with API keys.
-- An Azure account with access to Azure Cosmos DB, Azure Databricks, and Power BI.
-- Python knowledge, specifically familiarity with Tweepy library.
+## Objectives
 
-### Usage
+The main objectives of our project are as follows:
 
-1. Create a Twitter Developer account and get your API keys.
-2. Install and import the Tweepy library in your Python environment.
-3. Set up your Azure Cosmos DB for data storage.
-4. Configure your Azure Databricks for data processing and analysis.
-5. Connect Power BI to Azure Databricks for data visualization.
+1. **Real-time Twitter Data Collection**: Utilize Twitter API to collect real-time tweets. 
 
-### Repository Structure
+2. **Data Storage**: Store the collected tweets in a robust and scalable NoSQL database, Azure Cosmos DB.
+
+3. **Data Analysis**: Leverage Azure Databricks, a distributed analysis platform based on Apache Spark, to analyze and process the data. Specifically, we plan to perform sentiment analysis on the tweets to determine the general opinion of Twitter users on specific topics.
+
+4. **Results Storage**: Save the analysis results in a Hive Metastore for further access and analysis.
+
+5. **Data Visualization**: Visualize the analysis results using Power BI. This enables end users to interact with the data and derive valuable insights.
+
+
+
+## Getting Started
+
+1. **Prerequisites**: Install the necessary Python packages.
+
+2. **Twitter API Key**: You need to create a Twitter Developer account and generate API Keys to use the Twitter API.
+
+3. **Azure Account**: You also need an Azure account for using Azure Cosmos DB and Azure Databricks.
+
+4. **Running the Scripts**: Run `get_tweets.py` to start collecting tweets. Then run `Twitter-Databricks.py` in an Azure Databricks notebook to analyze the tweets.
+
+5. **Power BI**: Connect Power BI to your Hive Metastore where your analysis results are stored to create visualizations.
+
+
+## Repository Structure
 
 - **README.md**: This document, a general introduction to the project and guide for users.
-- **Code**: Directory containing all source code files. 
-- **Data**: Sample data for testing and demonstration purposes.
 
-### Contributing
+- **Twitter-Databricks.py**: The Python script used in Azure Databricks to analyze and process the tweets. It utilizes the transformer library to use a RoBERTa-based model for sentiment analysis.
 
-Contributions are always welcome! Please read the contributing guidelines (CONTRIBUTING.md) before starting.
+- **get_tweets.py**: The Python script for collecting real-time tweets using Tweepy library and Twitter API. It streams tweets based on certain keywords and stores the data into Azure Cosmos DB.
+
+- **databricks.png**: An image file showing the Azure Databricks notebook where the sentiment analysis is conducted.
 
 ### License
 
