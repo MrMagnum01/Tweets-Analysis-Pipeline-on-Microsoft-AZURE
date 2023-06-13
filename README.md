@@ -31,7 +31,6 @@ This project aims to leverage the power of social media, particularly Twitter, t
 - **README.md**: This document, a general introduction to the project and guide for users.
 - **Code**: Directory containing all source code files. 
 - **Data**: Sample data for testing and demonstration purposes.
-- **LICENSE**: The license file for the project.
 
 ### Contributing
 
